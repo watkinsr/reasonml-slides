@@ -10,21 +10,84 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Table of contents}
-  \tableofcontents
-\end{frame}
-
-\begin{frame}
   \section{Javascript so far}
-    \frametitle{Javascript so far}
-    ES6 (anonymous functions, etc.)
+  \frametitle{Javascript so far}
+  \pause
+  \begin{columns}
+    \column{.5\textwidth}
+    \begin{block}{Features}
+      \begin{itemize}
+      \item ES6 (Babel + Webpack)
+        \pause
+      \item Template literals
+        \pause
+      \item Destructuring (but no pattern-matching)
+        \pause
+      \item Promises + (async/await)
+        \pause
+      \item Spread operator
+        \pause
+      \item Get/set on class definitions
+        \pause
+      \item Some trivial features
+      \end{itemize}
+    \end{block}
+    \column{.5\textwidth}
+    \begin{block}{Problems}
+      \begin{itemize}
+      \item No pattern matching
+        \pause
+      \item Extremely loose typing
+        \pause
+      \item Runtime errors
+        \pause
+      \item Module system not great
+      \end{itemize}
+    \end{block}
+  \end{columns}
 \end{frame}
 
 \begin{frame}
   \section{What is ReasonML?}
-    \frametitle{What is ReasonML?}
-    It's Ocaml under-the-hood with javascript looking syntax
+  \frametitle{What is ReasonML?}
+  \pause
+  \begin{itemize}
+  \item It's Ocaml with JS-like syntax
+    \pause
+  \item Contains pattern-matching
+    \pause
+  \item Several FP features
+    \pause
+  \item Solid type system (30+ years of research)
+    \pause
+  \item Extremely fast compilation to JS (10x faster than TypeScript)
+    \pause
+  \end{itemize}
 \end{frame}
+
+\begin{frame}
+  \section{Ocaml to JS?}
+  \frametitle{Ocaml to JS?}
+  \pause
+  \begin{itemize}
+  \item Made possible by bucklescript
+    \pause
+  \item Human readable output
+    \pause
+  \item Ocaml to Native and JS
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \section{Comparing Reason/Bucklescript to Elm}
+  \frametitle{Comparing Reason/Bucklescript to Elm}
+  \pause
+  \begin{itemize}
+  \item Reason is a general-purpose language that can target node, native code and utilize both the opam and npm ecossytems. Elm is more opininated and focused, aiming at improving the experience in its own niche and ecosystem, at a rather high cost to its flexibility. Elm has better error messages, though Reason is closing in fast. BuckleScript has superb js interop, generates highly readable and easily debuggable js code and can utilize the npm ecosystem to its full extent, while Elm's FFI and interop is rather convoluted. Elm is pure, while Reason is pragmatic (take that as you wish :)). OCaml has had 25 or so years to mature, and has an active academic base of contributors that keep it close to the forefront of progamming langauge development, while Elm is relatively new and unstable, but moves faster. Reason has first-class support for React, while Elm is focused solely on "The Elm Architecture" (TEA). Reason does however also have a TEA implementation that does a surprisingly good job of mimicing its muse.
+    \pause
+  \end{itemize}
+\end{frame}
+
 
 \begin{frame}
   \section{Potential}
