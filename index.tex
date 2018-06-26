@@ -56,7 +56,7 @@
     \pause
   \item Contains pattern-matching
     \pause
-  \item Several FP features
+  \item Several FP features (currying by default)
     \pause
   \item Solid type system (30+ years of research)
     \pause
@@ -79,11 +79,29 @@
 \end{frame}
 
 \begin{frame}
+  \section{Reason Primitives}
+  \frametitle{Reason Primitives}
+  \pause
+    \begin{tabular}{ | l | p{5cm} |}
+      \hline
+      Primitive & Example \\ \hline
+      Strings & `test` \\ \hline
+      Characters & 'c' \\ \hline
+      Integers & 23, -23 \\ \hline
+      Floats & 23.0, -23.0 \\
+      \hline
+    \end{tabular}
+\end{frame}
+
+
+\begin{frame}
   \section{Comparing Reason/Bucklescript to Elm}
   \frametitle{Comparing Reason/Bucklescript to Elm}
   \pause
   \begin{itemize}
-  \item Reason is a general-purpose language that can target node, native code and utilize both the opam and npm ecossytems. Elm is more opininated and focused, aiming at improving the experience in its own niche and ecosystem, at a rather high cost to its flexibility. Elm has better error messages, though Reason is closing in fast. BuckleScript has superb js interop, generates highly readable and easily debuggable js code and can utilize the npm ecosystem to its full extent, while Elm's FFI and interop is rather convoluted. Elm is pure, while Reason is pragmatic (take that as you wish :)). OCaml has had 25 or so years to mature, and has an active academic base of contributors that keep it close to the forefront of progamming langauge development, while Elm is relatively new and unstable, but moves faster. Reason has first-class support for React, while Elm is focused solely on "The Elm Architecture" (TEA). Reason does however also have a TEA implementation that does a surprisingly good job of mimicing its muse.
+  \item From the FAQ (paraphrased)
+    \pause
+  \item Reason is a general-purpose language that can target node, native code and utilize both the opam and npm ecossytems. Elm is more opininated and focused. Elm has better error messages. BuckleScript has superb js interop, generates highly readable and easily debuggable js code and can utilize the npm ecosystem to its full extent, while Elm's FFI and interop is rather convoluted. Elm is pure, while Reason is pragmatic. OCaml has had 25 or so years to mature, and has an active academic base of contributors that keep it close to the forefront of progamming langauge development. Reason has first-class support for React, while Elm is focused solely on "The Elm Architecture" (TEA).
     \pause
   \end{itemize}
 \end{frame}

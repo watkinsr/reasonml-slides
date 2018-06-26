@@ -1,1 +1,3 @@
-* TODO Establish ReasonML slides
+* TODO Primitives
+* TODO How types help
+* TODO Reason-React
