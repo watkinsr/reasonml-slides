@@ -1,7 +1,11 @@
 \documentclass{beamer}
+\usetheme{PaloAlto}
+
 \mode<presentation>
+
 \author{Ryan Watkins}
 \title{Introduction to ReasonML}
+
 
 \begin{document}
 
@@ -20,29 +24,27 @@
   \end{frame}
 }
 
+\subsection{Features}
 \begin{frame}
-  \frametitle{Javascript so far}
-  \begin{columns}
-    \column{.5\textwidth}
-    \begin{block}{Features}
-      \begin{itemize}
-      \item<2-> ES6 (Babel + Webpack)
-      \item<3-> Template literals
-      \item<4-> Destructuring (single-branch pattern-matching)
-      \item<5-> Promises + (async/await)
-      \item<6-> Spread operator
-      \item<7-> Get/set on class definitions (some OOP)
-      \end{itemize}
-    \end{block}
-    \column{.5\textwidth}
-    \begin{block}{Problems}
-      \begin{itemize}
-      \item<8-> No great pattern matching
-      \item<9-> Non staticly typed, i.e. you get typed errors at runtime
-      \item<10-> Module system not great, you have to take care of it yourself
-      \end{itemize}
-    \end{block}
-  \end{columns}
+  \frametitle{Features (JS)}
+  \begin{itemize}
+  \item<2-> ES6 (Babel + Webpack)
+  \item<3-> Template literals
+  \item<4-> Destructuring (single-branch pattern-matching)
+  \item<5-> Promises + (async/await)
+  \item<6-> Spread operator
+  \item<7-> Get/set on class definitions (some OOP)
+  \end{itemize}
+\end{frame}
+
+\subsection{Problems}
+\begin{frame}
+  \frametitle{Problems (JS)}
+  \begin{itemize}
+  \item<2-> No great pattern matching
+  \item<3-> Non staticly typed, i.e. you get typed errors at runtime
+  \item<4-> Module system not great, you have to take care of it yourself
+  \end{itemize}
 \end{frame}
 
 \section{What is ReasonML?}
