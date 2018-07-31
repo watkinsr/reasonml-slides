@@ -17,27 +17,20 @@
     \column{.5\textwidth}
     \begin{block}{Features}
       \begin{itemize}
-      \item ES6 (Babel + Webpack)
-        \pause
-      \item Template literals
-        \pause
-      \item Destructuring (single-branch pattern-matching)
-        \pause
-      \item Promises + (async/await)
-        \pause
-      \item Spread operator
-        \pause
-      \item Get/set on class definitions (some OOP)
+      \item<2-> ES6 (Babel + Webpack)
+      \item<3-> Template literals
+      \item<4-> Destructuring (single-branch pattern-matching)
+      \item<5-> Promises + (async/await)
+      \item<6-> Spread operator
+      \item<7-> Get/set on class definitions (some OOP)
       \end{itemize}
     \end{block}
     \column{.5\textwidth}
     \begin{block}{Problems}
       \begin{itemize}
-      \item No great pattern matching
-        \pause
-      \item Non staticly typed, i.e. you get typed errors at runtime
-        \pause
-      \item Module system not great, you have to take care of it yourself
+      \item<8-> No great pattern matching
+      \item<9-> Non staticly typed, i.e. you get typed errors at runtime
+      \item<10-> Module system not great, you have to take care of it yourself
       \end{itemize}
     \end{block}
   \end{columns}
@@ -78,7 +71,6 @@
 \begin{frame}
   \section{Reason Primitives}
   \frametitle{Reason Primitives}
-  \pause
     \begin{tabular}{ | l | p{5cm} |}
       \hline
       Primitive & Example \\ \hline
@@ -93,13 +85,14 @@
 \begin{frame}
   \section{Pattern Matching}
   \frametitle{Pattern Matching}
-  \pause
-    \begin{tabular}{ | l | p{5cm} |}
-      \hline
-      Javascript already has single-branch pattern matching \\ \hline
-      I.e. const {foo, bar, baz} = props \\ \hline
-    \end{tabular}
+  \begin{tabular}{ | l | p{5cm} |}
+    \hline
+    Javascript already has single-branch pattern matching \\ \hline
+    I.e. const {foo, bar, baz} = props \\ \hline
+  \end{tabular}
 \end{frame}
+
+% TODO : Add some pattern matching examples
 
 \begin{frame}
   \section{Comparing Reason/Bucklescript to Elm}
@@ -117,10 +110,11 @@
   \section{References}
   \frametitle{References / more useful information}
   \pause
-    \begin{tabular}{ | l | p{5cm} |}
-      \hline
-      \item http://reasonmlhub.com/exploring-reasonml/ (web-book)
-    \end{tabular}
+  \begin{tabular}{ | l | p{5cm} |}
+    % \begin{itemize}
+    % \item http://reasonmlhub.com/exploring-reasonml/ (web-book)
+    % \end{itemize}
+  \end{tabular}
 \end{frame}
 
 
