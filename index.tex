@@ -21,27 +21,23 @@
         \pause
       \item Template literals
         \pause
-      \item Destructuring (but no pattern-matching)
+      \item Destructuring (single-branch pattern-matching)
         \pause
       \item Promises + (async/await)
         \pause
       \item Spread operator
         \pause
-      \item Get/set on class definitions
-        \pause
-      \item Some trivial features
+      \item Get/set on class definitions (some OOP)
       \end{itemize}
     \end{block}
     \column{.5\textwidth}
     \begin{block}{Problems}
       \begin{itemize}
-      \item No pattern matching
+      \item No great pattern matching
         \pause
-      \item Extremely loose typing
+      \item Non staticly typed, i.e. you get typed errors at runtime
         \pause
-      \item Runtime errors
-        \pause
-      \item Module system not great
+      \item Module system not great, you have to take care of it yourself
       \end{itemize}
     \end{block}
   \end{columns}
@@ -61,7 +57,6 @@
   \item Solid type system (30+ years of research)
     \pause
   \item Extremely fast compilation to JS (10x faster than TypeScript)
-    \pause
   \end{itemize}
 \end{frame}
 
@@ -75,6 +70,8 @@
   \item Human readable output
     \pause
   \item Ocaml to Native and JS
+    \pause
+  \item But we are not writing Ocaml, ReasonML is a javascript-like syntax of Ocaml.
   \end{itemize}
 \end{frame}
 
@@ -93,6 +90,16 @@
     \end{tabular}
 \end{frame}
 
+\begin{frame}
+  \section{Pattern Matching}
+  \frametitle{Pattern Matching}
+  \pause
+    \begin{tabular}{ | l | p{5cm} |}
+      \hline
+      Javascript already has single-branch pattern matching \\ \hline
+      I.e. const {foo, bar, baz} = props \\ \hline
+    \end{tabular}
+\end{frame}
 
 \begin{frame}
   \section{Comparing Reason/Bucklescript to Elm}
@@ -101,7 +108,7 @@
   \begin{itemize}
   \item From the FAQ (paraphrased)
     \pause
-  \item Reason is a general-purpose language that can target node, native code and utilize both the opam and npm ecossytems. Elm is more opininated and focused. Elm has better error messages. BuckleScript has superb js interop, generates highly readable and easily debuggable js code and can utilize the npm ecosystem to its full extent, while Elm's FFI and interop is rather convoluted. Elm is pure, while Reason is pragmatic. OCaml has had 25 or so years to mature, and has an active academic base of contributors that keep it close to the forefront of progamming langauge development. Reason has first-class support for React, while Elm is focused solely on "The Elm Architecture" (TEA).
+  \item TL;DR. Elm is pure, while Reason is pragmatic (support for React).
     \pause
   \end{itemize}
 \end{frame}
