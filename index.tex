@@ -9,10 +9,19 @@
   \titlepage
 \end{frame}
 
+
+\section{Javascript so far}
+
+\AtBeginSection[]{}
+{
+  \begin{frame}
+    \frametitle{Outline}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
 \begin{frame}
-  \section{Javascript so far}
   \frametitle{Javascript so far}
-  \pause
   \begin{columns}
     \column{.5\textwidth}
     \begin{block}{Features}
@@ -36,40 +45,34 @@
   \end{columns}
 \end{frame}
 
+\section{What is ReasonML?}
 \begin{frame}
-  \section{What is ReasonML?}
   \frametitle{What is ReasonML?}
   \pause
   \begin{itemize}
-  \item It's Ocaml with JS-like syntax
-    \pause
-  \item Contains pattern-matching
-    \pause
-  \item Several FP features (currying by default)
-    \pause
-  \item Solid type system (30+ years of research)
-    \pause
-  \item Extremely fast compilation to JS (10x faster than TypeScript)
+  \item<2-> It's Ocaml with JS-like syntax
+  \item<3-> Contains pattern-matching
+  \item<4-> Several FP features (currying by default)
+  \item<5-> Solid type system (30+ years of research)
+  \item<6-> Extremely fast compilation to JS (10x faster than TypeScript)
   \end{itemize}
 \end{frame}
 
+
+\section{Ocaml to JS?}
 \begin{frame}
-  \section{Ocaml to JS?}
   \frametitle{Ocaml to JS?}
   \pause
   \begin{itemize}
-  \item Made possible by bucklescript
-    \pause
-  \item Human readable output
-    \pause
-  \item Ocaml to Native and JS
-    \pause
-  \item But we are not writing Ocaml, ReasonML is a javascript-like syntax of Ocaml.
+  \item<2-> Made possible by bucklescript
+  \item<3-> Human readable output
+  \item<4-> Ocaml to Native and JS
+  \item<5-> But we are not writing Ocaml, ReasonML is a javascript-like syntax of Ocaml.
   \end{itemize}
 \end{frame}
 
+\section{Reason Primitives}
 \begin{frame}
-  \section{Reason Primitives}
   \frametitle{Reason Primitives}
     \begin{tabular}{ | l | p{5cm} |}
       \hline
@@ -82,34 +85,30 @@
     \end{tabular}
 \end{frame}
 
+\section{Pattern Matching}
 \begin{frame}
-  \section{Pattern Matching}
   \frametitle{Pattern Matching}
-  \begin{tabular}{ | l | p{5cm} |}
-    \hline
-    Javascript already has single-branch pattern matching \\ \hline
-    I.e. const {foo, bar, baz} = props \\ \hline
-  \end{tabular}
+  \begin{itemize}
+  \item<2-> Javascript already has single-branch pattern matching
+  \item<3-> I.e. const {foo, bar, baz} = props
+  \end{itemize}
 \end{frame}
 
 % TODO : Add some pattern matching examples
 
+
+\section{Comparing Reason to Elm}
 \begin{frame}
-  \section{Comparing Reason/Bucklescript to Elm}
-  \frametitle{Comparing Reason/Bucklescript to Elm}
-  \pause
+  \frametitle{Comparing Reason to Elm}
   \begin{itemize}
-  \item From the FAQ (paraphrased)
-    \pause
-  \item TL;DR. Elm is pure, while Reason is pragmatic (support for React).
-    \pause
+  \item<2-> From the FAQ (paraphrased)
+  \item<3-> TL;DR. Elm is pure, while Reason is pragmatic (support for React).
   \end{itemize}
 \end{frame}
 
+\section{References}
 \begin{frame}
-  \section{References}
   \frametitle{References / more useful information}
-  \pause
   \begin{tabular}{ | l | p{5cm} |}
     % \begin{itemize}
     % \item http://reasonmlhub.com/exploring-reasonml/ (web-book)
