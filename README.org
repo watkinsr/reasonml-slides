@@ -1,3 +1,5 @@
-* TODO Primitives
-* TODO How types help
-* TODO Reason-React
+* Sections
+- Primitives
+- JS vs ReasonML
+- What is Reason?
+- References
